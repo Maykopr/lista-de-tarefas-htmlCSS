@@ -11,7 +11,7 @@ function addTarefa() {
         let novaTarefa = `   
         <div class="lista" id="${contador}" >
         <label for="check${contador}" id="tarefa" ><input onclick="marcarTarefa(${contador})" type="checkbox" class="check" id="check${contador}">${valorInput}</label>
-        <button onclick="deletar(${contador})" type="submit" id="deleteButton">Delete</button>
+        <button onclick="deletar(${contador})" type="submit" id="deleteButton"><img class="lixeira"src="img/delete.png" alt="icone lixeira"></button>
         </div>`;
 
         /*add novo bloco html à lista e limpa a caixa de texto*/

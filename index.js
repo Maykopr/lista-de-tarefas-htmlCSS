@@ -9,11 +9,10 @@ function addTarefa() {
         ++contador;
 
         let novaTarefa = `   
-        <section class="lista" id="${contador}">
-        <input onclick="marcarTarefa(${contador})" type="checkbox" name="feito" id="check${contador}">
-        <p onclick="marcarTarefa(${contador})" id="tarefa">${valorInput}</p>
+        <div class="lista" id="${contador}" >
+        <label for="check${contador}" id="tarefa" ><input onclick="marcarTarefa(${contador})" type="checkbox" class="check" id="check${contador}">${valorInput}</label>
         <button onclick="deletar(${contador})" type="submit" id="deleteButton">Delete</button>
-        </section>`;
+        </div>`;
 
         /*add novo bloco html à lista e limpa a caixa de texto*/
         areaList.innerHTML += novaTarefa;
@@ -43,12 +42,6 @@ function marcarTarefa(id) {
         item.classList.add("clicado")
 
     } else { item.classList.remove("clicado") }
-
-    // if (check.checked) {
-    //     check.chacked = false;
-    // } else {
-    //     check.checked = true;
-    // }
 
 
 }

@@ -83,7 +83,7 @@ h1 {
     display: flex;
     flex-flow: row;
     align-items: center;
-    border: 1px solid rgb(255, 26, 18);
+    border: 1px solid rgb(255, 230, 163);
 }
 
 .lista.clicado {
@@ -97,9 +97,9 @@ h1 {
 }
 
 
-#check {
-    margin: 20px;
-    border: 1px solid rgb(0, 0, 247);
+.check {
+    margin-right: 20px;
+    border: 2px solid rgb(0, 0, 247);
 
 }
 

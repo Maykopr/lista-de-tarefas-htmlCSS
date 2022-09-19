@@ -97,11 +97,13 @@ main {
 
 #tarefa {
     width: 500px;
-    height: 30px;
+    height: auto;
     max-width: 80%;
     margin: 20px;
-    padding: 4px;
+    padding: 8px;
     border-bottom: 1px dashed rgb(69, 69, 70);
+    word-wrap: break-word;
+
 }
 
 #deleteButton {

@@ -1,0 +1,16 @@
+{
+  "name": "projeto-listadetarefas",
+  "version": "1.0.0",
+  "description": "Este projeto é o primeiro de uma série de projetos iniciais para treino da tríade HTML, CSS e JS. Para este fim, não creio ser necessário projetos mais complexos. Portanto, farei aqueles projetos que são de praxe lançando o foco nos aspectos de organização, refatoração de scripts e etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mayko Costa",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.11.0",
+    "eslint": "^9.11.0",
+    "globals": "^15.9.0"
+  }
+}

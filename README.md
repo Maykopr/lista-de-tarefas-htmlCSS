@@ -1,11 +1,34 @@
-# projeto-lista-de-tarefas
+# Lista de tarefas
 
-## Motivo deste projeto
-Este projeto é o primeiro de uma série de projetos iniciais para treino da tríade HTML, CSS e JS. Para este fim, não creio ser necessário projetos mais complexos. Portanto, farei aqueles projetos que são de praxe lançando o foco nos aspectos de organização, refatoração de scripts e etc.
+Este foi o meu primeiro projeto para acompanhar um curso de html e CSS. Apesar de muito simples, ele foi o meu primeiro contato com estas tecnologias. 
 
----
-Obs: fique a vontade para comentar, sugerir ou copiar o projeto.
+## Uso
 
-atenciosamente,
 
-Mayko Costa.
+### Requisitos
+
+Não há nenhum requerimento pra rodar este app. Basta abrir o index.html no navegador.
+
+### Instalação
+
+Sem necessidade de instalação. Depois de baixar o projeto, basta abrir o arquivo "index.html" na pasta raiz.
+
+## Construído com
+
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
+![GIT](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+
+
+## Autor
+
+[Mayko Costa](https://github.com/Maykopr)
+
+![Meu-LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
+![Meu-E-mail](https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)
+
+## Licensa
+
+This project is licensed under the Creative Commons License

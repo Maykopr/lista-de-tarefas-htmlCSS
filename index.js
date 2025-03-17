@@ -20,7 +20,7 @@ function addTask() {
 
             const newTaskHtml = `
                   <div class="anotation-card" id="${taskCount}">
-                        <input onclick="markTask(${taskCount})" type="checkbox" class="check-box" id="check${taskCount}">
+                        <input type="checkbox" class="check-box" id="check${taskCount}">
                         <label for="check${taskCount}"></label>
                         <p class="anotation-card__text">${inputValue}</p>
                         <button onclick="removeTask(${taskCount})" type="button" class="anotation-card__button" id="deleteButton"><i class="fi fi-ss-trash-restore-alt"></i></button>

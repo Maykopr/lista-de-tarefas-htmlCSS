@@ -10,7 +10,12 @@
 }
 
 :root{
-    --fonte-principal: 'Urbanist', Calibri, 'Trebuchet MS', sans-serif;
+    --font-principal: 'Urbanist', Calibri, 'Trebuchet MS', sans-serif;
+
+    --shadow-box: 0px 12px 10px hsla(20, 10%, 20%, 0.1);
+
+    --width-app: clamp(300px, 90vw, 450px);
+    --height-app: clamp(500px, 90vh, 750px);
     
     /* COLORS  */
     --primary-color: hsl(20, 10%, 20%);
@@ -33,13 +38,41 @@
     --warning-color:hsl(50, 100%, 70%);
     --danger-color:hsl(0, 100%, 70%);
 
-    --shadow-box: 0px 12px 10px hsla(20, 10%, 20%, 0.1);
+    
+    /* SPACES  */
+    --space-xs: clamp(0.375rem, 0.3029rem + 0.2885vw, 0.5625rem);
+    --space-s: clamp(0.75rem, 0.6058rem + 0.5769vw, 1.125rem);
+    --space-m: clamp(1.125rem, 0.9087rem + 0.8654vw, 1.6875rem);
+    --space-l: clamp(1.5rem, 1.2115rem + 1.1538vw, 2.25rem);
+    --space-xl: clamp(2.25rem, 1.8173rem + 1.7308vw, 3.375rem);
 
-    --width-app: clamp(300px, 90vw, 500px);
+    /* FONTS */
+/* @link https://utopia.fyi/type/calculator?c=360,16,1.333,1980,18,1.618,4,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+	
+	--fsize--2: max(clamp(0.4rem, 0.6rem + -0.13vw, 0.6rem),clamp(0.4rem, 0.6rem + -0.13vh, 0.6rem));
+	--fsize--1: max(clamp(0.7rem, 0.8rem + -0.05vw, 0.8rem),clamp(0.7rem, 0.8rem + -0.05vh, 0.8rem));
+	--fsize-0: max(clamp(1rem, 0.9rem + 0.2vw, 1.2rem),clamp(1rem, 0.9rem + 0.2vh, 1.2rem));
+	--fsize-1: max(clamp(1.3rem, 1.1rem + 0.6vw, 1.8rem),clamp(1.3rem, 1.1rem + 0.6vh, 1.8rem));
+	--fsize-2: max(clamp(1.5rem, 1.2rem + 1.4vw, 2.9rem),clamp(1.5rem, 1.2rem + 1.4vh, 2.9rem));
+	--fsize-3: max(clamp(2rem, 1.3rem + 2.7vw, 4.7rem),clamp(2rem, 1.3rem + 2.7vh, 4.7rem));
+
+	--font-hero: 800 var(--fsize-3) "Urbanist", sans-serif;
+	--font-nav: 400 var(--fsize-1) "Urbanist", sans-serif;
+	--font-title: 800 var(--fsize-1) "Urbanist", sans-serif;
+	--font-description: 500 var(--fsize-0) "Urbanist", sans-serif;
+	--font-title2: 300 var(--fsize--1)  "Urbanist", sans-serif;
+	--font-description2: 300 var(--fsize--2)  "Urbanist", sans-serif;
+
+
+	/* SIZES  */
+	--fluid-4-24: clamp(0.25rem, -0.1204rem + 1.8519vw, 0.5rem);
+	--fluid-6-12: clamp(0.375rem, -0.0776rem + 1.0345vw, 0.75rem);
+	--fluid-52-100: clamp(3.25rem, -0.3707rem + 8.2759vw, 6.7rem);
 }
 
 body {
-    font-family: var(--fonte-principal);
+    font-family: var(--font-principal);
     display: flex;
     background-color: var(--neutral-color);
     justify-content: center;
@@ -54,8 +87,8 @@ body {
     box-shadow: var(--shadow-box);
     display: flex;
     flex-direction: column;
+    height: var(--height-app);
     aspect-ratio: 9/16;
-    max-height: 90vh;
 }
 
 header {
@@ -68,25 +101,25 @@ main{
 }
 
 .title {
-    padding: 1em;
+    padding: var(--space-m);
     text-align: center;
+    font-size: var(--fsize-1);
 }
 
 .form {
     display: flex;
-    padding: 0.5ch 1ch;
+    padding: var(--space-xs) var(--space-s);
     box-shadow: var(--shadow-box);
     height: 10%;
-    gap: 0.5ch;
-    font-size: 1.8rem;
+    gap: var(--space-xs);
 }
 
 .form__input {
     flex: 9;
-    border-radius: 1ch;
+    border-radius: var(--space-xs);
     border: none;
     background-color: var(--secondary-color);
-    padding: 2ch;
+    padding: var(--space-xs);
 }
 .form__input:focus {
     outline-color: var(--tertiary-color);
@@ -94,11 +127,11 @@ main{
 
 .form__button {
     flex: 1;
-    padding: 3ch;
     background-color: var(--primary-color);
     color: var(--light-color);
-    border-radius: 10%;
     border: none;
+    padding: var(--space-xs);
+    border-radius: var(--space-xs);
 }
 
 .form__button:hover {
@@ -112,8 +145,8 @@ main{
     flex: 1 0 auto;
     display: flex;
     flex-direction:column;
-    padding: 2em 1em;
-    gap: 1ch;
+    padding: var(--space-m);
+    gap: var(--space-xs);
     overflow-y: auto;
     height: 90%;
 }
@@ -122,11 +155,11 @@ main{
 .anotation-card  {
     display: flex;
     align-items: center;
-    gap: 1ch;
+    gap: var(--space-s);
     justify-content: space-between;
     background-color: var(--secondary-color);
-    padding: 1ch;
-    border-radius: 1ch;
+    padding: var(--space-s) var(--space-m);
+    border-radius: var(--space-xs);
 }
 
 .anotation-card__text {
@@ -136,16 +169,15 @@ main{
 }
     
 .anotation-card__button {
-    font-size: 1em;
+    font-size: var(--fsize-1);
     color: var(--primary-color);
-    padding: 1ch;
     border: none;
     background-color: transparent;
 }
 
 .anotation-card__button:hover {
     color: var(--tertiary-color);
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 /* footer*/
@@ -153,7 +185,7 @@ footer {
     text-align: center;
     background-color: var(--primary-color);
     color: var(--light-color);
-    padding: 1em;
+    padding: var(--space-s);
 }
 
 /* CHECKBOX  */
@@ -164,10 +196,10 @@ footer {
   
 .check-box + label {
 display: inline-block;
-width: 20px;
-height: 20px;
-border: 2px solid var(--primary-color);
-border-radius: 4px;
+width: var(--space-m);
+height: var(--space-m);
+border: 1.5px solid var(--primary-color);
+border-radius: var(--space-xs);
 position: relative;
 cursor: pointer;
 vertical-align: middle;
@@ -182,15 +214,13 @@ border-color: var(--tertiary-color)
 .check-box:checked + label::after {
 content: "✔";
 position: absolute;
-top: 0px;
-left: 3px;
-font-size: 0.8em;
-color: white;
+top: -1px;
+left: 18%;
+font-size: var(--fsize-0);
+color: var(--light-color);
 }
 
 .check-box:checked ~ p {
 text-decoration: line-through;
 text-decoration-color: var(--primary-color);
 }
-
-

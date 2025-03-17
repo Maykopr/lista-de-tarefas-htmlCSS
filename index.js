@@ -32,22 +32,9 @@ function addTask() {
       }
 }
 
-
-
 function removeTask(id) {
       const task = document.getElementById(id);
       task.remove(id);
-}
-
-function markTask(id) {
-      const item = document.getElementById(id);
-      let classe = item.getAttribute("class");
-      let check = document.getElementById(`check${id}`);
-      if (classe == "lista") {
-            item.classList.add("clicado");
-      } else {
-            item.classList.remove("clicado");
-      }
 }
 
 textInput.addEventListener("keyup", function (event) {

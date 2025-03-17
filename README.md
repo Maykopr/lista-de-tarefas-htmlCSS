@@ -1,6 +1,7 @@
+![Lista-de-tarefas](./img/lista-de-tarefas.png)
 # Lista de tarefas
 
-Este foi o meu primeiro projeto para acompanhar um curso de html e CSS. Apesar de muito simples, ele foi o meu primeiro contato com estas tecnologias. 
+Este foi o meu primeiro projeto para acompanhar um curso de html e CSS. Apesar de muito simples, ele foi o meu primeiro contato com estas tecnologias. É verdade que eu precisei atualizar algumas coisinhas, mas todo o histórico de commits está disponível, para o meu constrangimento.
 
 ## Uso
 

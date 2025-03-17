@@ -7,27 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 
 <body>
-    <div class="corpo">
+    <div class="app">
         <header>
-            <h1 class="cabecalho" id="teste">Lista de Tarefas</h1>
+            <h1 class="title">Lista de Tarefas</h1>
         </header>
         <main>
-            <div class="pergunta">
-                <input type="text" id="caixaTexto" placeholder="O que deseja fazer?">
-                <button id="botao" onclick="addTarefa()">+</button>
-            </div>
-            <div id="areaLista">
+            <form class="form" action="#">
+                <input type="text" id="input" class="form__input" placeholder="O que deseja fazer?">
+                <button type="button" id="btn-add" class="form__button">add</button>
+            </form>
+            <div id="list-area" class="list-area">
             </div>
         </main>
         <footer>
-            <p>Seja mais produtivo, você consegue!</p>
+            <p>Consistência é a chave para o sucesso!</p>
         </footer>
+       
     </div>
-    <script src="index.js">
-    </script>
 </body>
 
 </html>

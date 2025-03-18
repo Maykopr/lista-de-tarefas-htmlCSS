@@ -4,12 +4,14 @@
   "description": "Lista de tarefas em html, css e js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild ./src/index.js --bundle --outfile=./dist/js/index.js && esbuild --bundle ./src/style.css --minify --outfile=./dist/css/style.css"
   },
   "author": "Mayko Costa",
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.11.0",
+    "esbuild": "0.25.1",
     "eslint": "^9.11.0",
     "globals": "^15.9.0"
   }
